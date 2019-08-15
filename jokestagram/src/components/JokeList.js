@@ -24,7 +24,6 @@ const StyledJokesContainer = styled.div`
   justify-content: space-evenly;
   align-items: baseline;
 `
-
 const StyledErrorMessage = styled.p`
   color: red
 `
