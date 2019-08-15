@@ -15,6 +15,7 @@ const StyledJokeListContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 40px;
 `
 const StyledJokesContainer = styled.div`
   width: 100vw;
