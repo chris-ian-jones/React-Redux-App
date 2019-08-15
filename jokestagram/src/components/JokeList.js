@@ -25,7 +25,9 @@ const StyledJokesContainer = styled.div`
   align-items: baseline;
 `
 const StyledErrorMessage = styled.p`
-  color: red
+  font-size: 2rem;  
+  color: red;
+  padding: 30px 0 30px 0;
 `
 
 const JokeList = props => {

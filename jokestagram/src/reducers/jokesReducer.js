@@ -8,7 +8,7 @@ const initialState = {
   jokes: [],
   isLoading: false,
   error: ''
-};
+}
 
 export const reducer = (state = initialState, action) => {
   switch (action.type) {

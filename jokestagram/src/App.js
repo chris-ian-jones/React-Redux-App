@@ -4,8 +4,6 @@ import styled from 'styled-components'
 import JokeList from './components/JokeList'
 
 const StyledAppContainer = styled.div`
-  height: 100vh;
-  max-height: 100%;
   width: 100vw;
   max-width: 100%;
   display: flex;
@@ -24,7 +22,7 @@ function App() {
       <StyledTitle>Dad Jokes</StyledTitle>
       <JokeList />
     </StyledAppContainer>
-  );
+  )
 }
 
 export default App;
