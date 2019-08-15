@@ -13,7 +13,7 @@ export const getJokeData = () => {
         dispatch({ type: FETCH_JOKE_DATA_SUCCESS, payload: result.data })
       })
       .catch(error => {
-        dispatch({ type: FETCH_JOKE_DATA_FAILURE, payload: 'API Error!' })
+        dispatch({ type: FETCH_JOKE_DATA_FAILURE, payload: 'Sorry - there was an error requesting Jokes from API!' })
       })
   }
 }

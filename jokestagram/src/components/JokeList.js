@@ -11,6 +11,7 @@ const JokeList = props => {
       <button onClick={props.getJokeData}>
         {props.isLoading ? <Loader type="ThreeDots" color="orange" height={80} width={80} /> : 'Get Jokes!'}
       </button>
+      <p>{props.error}</p>
       {props.jokes && 
         props.jokes.map(joke => <JokeCard key={joke.id} joke={joke} />)}
     </>
@@ -20,7 +21,8 @@ const JokeList = props => {
 const mapStateToProps = state => {
   return {
   jokes: state.jokes,
-  isLoading: state.isLoading
+  isLoading: state.isLoading,
+  error: state.error
   }
 }
 
