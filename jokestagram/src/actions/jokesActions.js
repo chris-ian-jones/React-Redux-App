@@ -10,7 +10,11 @@ export const getJokeData = () => {
     axios
       .get('https://official-joke-api.appspot.com/random_ten')
       .then(result => {
-        console.log(result)
+        console.log(result.data)
+        dispatch({ type: FETCH_JOKE_DATA_SUCCESS, payload: result.data })
+      })
+      .catch(error => {
+        dispatch({ type: FETCH_JOKE_DATA_FAILURE, payload: 'API Error!' })
       })
   }
 }
