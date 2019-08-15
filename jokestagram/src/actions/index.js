@@ -1,0 +1,1 @@
+export { getJokeData } from './jokesActions'
