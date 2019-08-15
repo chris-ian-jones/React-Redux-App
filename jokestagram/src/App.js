@@ -21,7 +21,7 @@ const StyledTitle = styled.h1`
 function App() {
   return (
     <StyledAppContainer>
-      <StyledTitle>Joke Generator</StyledTitle>
+      <StyledTitle>Dad Jokes</StyledTitle>
       <JokeList />
     </StyledAppContainer>
   );

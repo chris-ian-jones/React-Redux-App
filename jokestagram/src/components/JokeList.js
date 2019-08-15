@@ -35,7 +35,7 @@ const JokeList = props => {
         <Loader type="ThreeDots" color="orange" height={60} width={150}/> 
       ) : (
         <Button onClick={props.getJokeData} size='massive' color='orange'>
-          Get Jokes!
+          Go
         </Button>
       )}
       <StyledErrorMessage>{props.error}</StyledErrorMessage>
