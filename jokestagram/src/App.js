@@ -1,14 +1,29 @@
 import React from 'react';
+import styled from 'styled-components'
 
-import './App.css';
 import JokeList from './components/JokeList'
+
+const StyledAppContainer = styled.div`
+  height: 100vh;
+  max-height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+const StyledTitle = styled.h1`
+  font-size: 4rem;
+  color: navy;
+  padding-top: 50px;
+`
 
 function App() {
   return (
-    <div className="App">
-      <h1>Joke Generator</h1>
+    <StyledAppContainer>
+      <StyledTitle>Joke Generator</StyledTitle>
       <JokeList />
-    </div>
+    </StyledAppContainer>
   );
 }
 
